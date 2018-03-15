@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("h1").hide(1000);
+		});
+	});
+		
+		$(document).ready(function(){
+		$("#demo").click(function (){
+		$("p").hide();
+		$("h2").addClass("green")
+	
+	});
+});
+		$(document).ready(function(){
+		$("#demo1").dblclick(function (){
+		$("h3").hide();
+	
+	});
+});
+		/*$(document).ready(function(){
+		$("#demo2").mouseenter(function (){
+		 	alert("you enter");
+	
+	});
+});*/
+
+		$(document).ready(function(){
+			$("h2").click(function(){
+		$("h2").addClass("green")
+	
+	});
+		});
+</script>
+</head>
+<body>
+<h1>welcome</h1>
+<p id="demo">Hello Everyone</p>
+<h3 id="demo1">i will disappear when u double click on me</h3>
+<p id="demo2">mouse enter me</p>
+<h2>Good Morning</h2>
+<button>Hide</button>
+<button id="b1">Show</button>
+</body>
+</html>
+<style>
+.green
+{
+	font-size: 100px;
+	color:red;
+}
