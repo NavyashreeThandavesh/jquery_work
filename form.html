@@ -2,26 +2,43 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#first").hide();
-});
-$(document).ready(function(){
-    $("button").click(function(){;
-    $("#second").show();
+    <script>
+    $(document).ready(function(){
+        $("#first").hide();
     
-});
-    });
+    $("button").click(function(){
+        debugger
+        if($("#fname").val() == "" || $("#lname").val()== "" || $("#email").val()== "" || $("#add").val()== "")
+   {
+    alert("Please fill the form!!");
+}
 
-</script>
+else{
+    debugger
+     $("#second").hide();
+     $("#first").show();
+    var f_name = $("#fname").val();
+    $("#form1").text(f_name);
+    var l_name = $("#lname").val();
+    $("#form2").text(l_name);
+    var e_mail = $("#email").val();
+    $("#form3").text(e_mail);
+    var add1 = $("#add").val();
+    $("#form4").text(add1);
+}
+});
+});
+
+    </script>
+    </head>
 <body>
 
-<div id="first">
+<div id="first" style="display:none">
 
-<h3>FastName</h3>
-<h3>LastName</h3>
-<h3>Email</h3>
-<h3>Address</h3>
+<h3>FastName</h3><span id="form1"></span>
+<h3>LastName</h3><span id="form2"></span>
+<h3>Email</h3><span id="form3"></span>
+<h3>Address</h3><span id="form4"></span>
 </div>
 
 <div id="second">
@@ -33,9 +50,5 @@ Address<input type="text" name="add" id="add" placeholder="add">
 <button type="button">Submit</button>
 
 </div>
-
-
-   
     </body>
-    </html>
-    
+         </html>
